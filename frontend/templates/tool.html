@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Tool{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="/frontend/css/tool.css">
+<body>
+    <h1>Chat with GPT</h1>
+    <div>
+        <textarea id="user-message" placeholder="Nhập tin nhắn..." rows="4" cols="50"></textarea>
+        <button id="send-btn">Gửi</button>
+    </div>
+    <div id="chat-response">
+        <h2>Phản hồi từ GPT:</h2>
+        <p id="response-text"></p>
+    </div>
+</body>
+<script src="/frontend/js/tool.js"></script>
+{% endblock %}
